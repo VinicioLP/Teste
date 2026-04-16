@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de O.S. | Attech & Variedades</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Acompanhamento online</p>
+      <h1>Consulte o andamento do seu aparelho</h1>
+      <p class="subtitle">Digite o codigo da etiqueta ou leia o QR Code entregue pela loja.</p>
+      <form id="lookup-form" class="lookup">
+        <input id="token-input" autocomplete="off" placeholder="Codigo da O.S." aria-label="Codigo da O.S.">
+        <button type="submit">Consultar</button>
+      </form>
+    </section>
+
+    <section id="status-card" class="card hidden" aria-live="polite">
+      <div class="card-header">
+        <div>
+          <p class="eyebrow">Ordem de servico</p>
+          <h2 id="order-number">-</h2>
+        </div>
+        <span id="status-badge" class="badge">-</span>
+      </div>
+
+      <div class="grid">
+        <article>
+          <span>Cliente</span>
+          <strong id="customer-name">-</strong>
+        </article>
+        <article>
+          <span>Aparelho</span>
+          <strong id="device-name">-</strong>
+        </article>
+        <article>
+          <span>Previsao</span>
+          <strong id="expected-date">-</strong>
+        </article>
+        <article>
+          <span>Atualizado</span>
+          <strong id="updated-at">-</strong>
+        </article>
+      </div>
+
+      <div class="progress">
+        <h3 id="public-title">-</h3>
+        <p id="public-description">-</p>
+        <ol id="timeline"></ol>
+      </div>
+
+      <p class="notice">Para informacoes detalhadas, orcamentos ou retirada, fale diretamente com a loja.</p>
+    </section>
+
+    <section id="empty-card" class="card">
+      <h2>Informe um codigo para consultar</h2>
+      <p>Nenhum dado sensivel e exibido neste portal. A consulta usa apenas o codigo publico da sua O.S.</p>
+    </section>
+
+    <section id="error-card" class="card error hidden">
+      <h2>Nao encontramos esta O.S.</h2>
+      <p>Confira o codigo da etiqueta ou entre em contato com a loja.</p>
+    </section>
+  </main>
+  <script src="portal.js"></script>
+</body>
+</html>
