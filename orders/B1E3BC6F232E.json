@@ -1,0 +1,21 @@
+{
+  "token": "B1E3BC6F232E",
+  "public_url": "https://seu-dominio.com/consulta.html?token=B1E3BC6F232E",
+  "company_name": "Attech & Variedades",
+  "order_number": "OS-20260416-0001",
+  "customer_name": "Vinicio",
+  "device_name": "Samsung A56 5G - Cinza",
+  "status": "Aguardando triagem",
+  "status_label": "Aguardando triagem",
+  "status_description": "Seu aparelho esta na fila para avaliacao tecnica inicial.",
+  "expected_delivery_date": "2026-05-06",
+  "generated_at": "2026-04-16T17:16:32",
+  "history": [
+    {
+      "status": "Aguardando triagem",
+      "label": "Aguardando triagem",
+      "description": "Seu aparelho esta na fila para avaliacao tecnica inicial.",
+      "changed_at": "2026-04-16T20:12:39"
+    }
+  ]
+}
